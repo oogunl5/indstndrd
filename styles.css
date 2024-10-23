@@ -1,0 +1,68 @@
+html{
+    font-family: 'Sintony';
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;
+}
+h2{
+    font-family: 'Sintony';
+    font-size: 3em;
+    text-align: center;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically (if the container has a set height) */
+    height: 50em;
+}
+#image{
+    width: 30%;
+    margin-top: -25em;
+}
+
+p{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: -15em;
+}
+#tag{
+    margin-top: auto;
+    font-size: 1em;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 767px)
+{
+    h2{
+        margin-top: 3em;
+        font-family: 'Sintony';
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .image-container{
+        display: flex;
+        justify-content: center; /* Centers the image horizontally */
+        align-items: center; /* Centers the image vertically (if the container has a set height) */
+        height: 40em;
+    }
+    #image{
+        width: 50%;
+        margin-top: -25em;
+    }
+    
+    p{
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: -15em;
+    }
+    #tag{
+        margin-top: auto;
+        font-size: 1em;
+        font-style: italic;
+    }
+
+}
