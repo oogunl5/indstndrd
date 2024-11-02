@@ -1,0 +1,192 @@
+/* Base styles */
+html {
+    font-family: 'Sintony', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Header */
+  #header {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 3em;
+  }
+  
+  /* Image styles */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+  }
+  
+  #image {
+    width: 35%;
+    margin-top: -10em;
+  }
+  
+  #tag {
+    font-size: 1em;
+    font-style: italic;
+    margin-top: auto;
+  }
+  
+  #cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+  }
+  
+  /* Form styles */
+  form {
+    margin: -3em auto 0;
+    width: 80%;
+  }
+  
+  .container {
+    margin: auto;
+    padding: 25px;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  input{
+    color: white;
+  }
+
+  /* Input elements */
+  input[type="text"] {
+    width: 100%;
+    padding: 1em;
+    font-size: 1.5em;
+    height: 2em;
+    margin: 8px 0;
+    background-color: black;
+    border: 0.1em solid white;
+    border-radius: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    width: 50%;
+    font-size: 1.5em;
+    height: 3em;
+    margin: -6em auto 0;
+    background-color: black;
+    border: 0.1em solid white;
+    border-radius: 1em;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: white;
+    border-color: black;
+    color: white;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Base styles */
+    html {
+      font-family: 'Sintony', sans-serif;
+      background-color: black;
+      color: white;
+      display: block; /* Changed from flex to block for mobile */
+    }
+  
+    /* Header */
+    #header {
+      font-size: 2.5em; /* Reduced from 5em */
+      text-align: center;
+    }
+  
+    /* Image styles */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15em; /* Reduced from 30em */
+    }
+  
+    #image {
+      width: 25%; /* Increased from 35% for better mobile visibility */
+      margin-top: -6em; /* Reduced from -10em */
+    }
+  
+    #tag {
+      font-size: 0.9em;
+      font-style: italic;
+      margin-top: auto;
+      text-align: center;
+    }
+  
+    #cats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10em; /* Reduced from 20em */
+    }
+  
+    /* Form styles */
+    form {
+      margin: -1.5em auto 0; /* Adjusted from -3em */
+      width: 90%; /* Increased from 80% */
+    }
+
+    input{
+        color: white;
+      }
+  
+    .container {
+      margin: auto;
+      padding: 15px; /* Reduced from 25px */
+      height: auto; /* Changed from fixed height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* Input elements */
+    input[type="text"] {
+      width: 85%;
+      padding: 0.8em; /* Reduced from 1em */
+      font-size: 1.2em; /* Reduced from 1.5em */
+      height: 2em;
+      margin: 6px 0; /* Reduced from 8px */
+      background-color: black;
+      border: 0.1em solid white;
+      border-radius: 0.8em; /* Reduced from 1em */
+      box-sizing: border-box;
+    }
+  
+    /* Submit button */
+    input[type="submit"] {
+      width: 75%; /* Increased from 80% */
+      font-size: 1.2em; /* Reduced from 1.5em */
+      height: 2em; /* Reduced from 3em */
+      margin: 1em auto 0; /* Changed from negative margin */
+      background-color: black;
+      border: 0.1em solid white;
+      border-radius: 0.8em; /* Reduced from 1em */
+      color: white;
+      transition: all 0.3s ease;
+      margin-top: -0.25em;
+    }
+  
+    input[type="submit"]:hover {
+      opacity: 0.8;
+      background-color: white;
+      border-color: black;
+      color: black;
+    }
+  }
